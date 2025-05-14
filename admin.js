@@ -1,8 +1,8 @@
 // Admin Configuration - YOU NEED TO SET THESE
-const REPO_OWNER = 'your-github-username';
-const REPO_NAME = 'your-repo-name';
+const REPO_OWNER = 'MrDevilEggs';
+const REPO_NAME = 'daily-records-website';
 const DATA_FILE = 'data/records.json'; // Path to your data file in the repo
-const GITHUB_TOKEN = 'your-github-token'; // Needs repo access
+const GITHUB_TOKEN = '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'; // Needs repo access
 
 // DOM Elements
 const adminDateEl = document.getElementById('admin-date');
