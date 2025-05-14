@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Daily Records</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="discord-container">
+        <header class="discord-header">
+            <h1>Admin - Daily Records</h1>
+        </header>
+        
+        <main class="discord-main">
+            <div class="records-container">
+                <div class="admin-form">
+                    <h2>Add/Edit Daily Record</h2>
+                    
+                    <div class="form-group">
+                        <label for="admin-date">Date:</label>
+                        <input type="date" id="admin-date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="admin-leader">Convoy Leader:</label>
+                        <input type="text" id="admin-leader" placeholder="Enter leader name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="admin-deputy1">Deputy 1:</label>
+                        <input type="text" id="admin-deputy1" placeholder="Enter deputy name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="admin-deputy2">Deputy 2:</label>
+                        <input type="text" id="admin-deputy2" placeholder="Enter deputy name">
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button id="save-btn">Save Record</button>
+                        <button id="cancel-btn">Cancel</button>
+                    </div>
+                    
+                    <div id="admin-message" class="message"></div>
+                </div>
+                
+                <div id="existing-records" class="existing-records">
+                    <h3>Existing Records</h3>
+                    <!-- Existing records will be loaded here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="admin.js"></script>
+</body>
+</html>
